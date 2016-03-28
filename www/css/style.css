@@ -1,0 +1,157 @@
+body
+{
+	background-color: black!important;
+	color:snow;
+	width: 1960px;
+	height: 1040px;
+	font-size: 0.8em;
+	font-family: 'Open Sans';
+}
+section
+{
+	background-color: black;
+	overflow: hidden;
+}
+header
+{
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*меню та пошук*/
+#menu
+{
+	float:left;
+	padding:10px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+#menu img { margin-bottom: -25px; }
+#search
+{
+	cursor: pointer;
+	padding-right: 20px; 
+	padding-bottom: 20px;
+	float:right;
+}
+#search input
+{
+	display: none;
+	font-size: 1.5em;
+	height: 42px;
+	width: 400px;
+}
+#search img { margin-bottom: -30px; }
+/*таблиці*/
+#video-bann
+{
+	width:100%;
+	height: 1040px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+table {display: none;}
+/*допоміжні класи*/
+.active { display: block; }
+.double-col {width: 600px;}
+.clear-margin {margin: -2px; }
+.clear-padd
+{
+	padding: 0px!important;
+	border: 0px!important;
+	margin: 0px;
+}
+/*відео-блоки*/
+td
+{ 
+	color:white;
+	width: 300px;
+	height: 300px;
+    padding: 15px;
+	position: relative;
+	background-size: 100%;
+	vertical-align:bottom;
+	transition: border-color 0.3s  linear;
+}
+td:hover { border-color:  white!important; }
+td::after {
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) , transparent 90%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+td.clear-grad::after { background: none!important;}
+/*контент відео-блоку*/
+td h3
+{
+	position: relative;
+	z-index: 10000;
+	margin: 5px;
+	margin-bottom: 30px;
+	width: 20%;
+	font-size: 1.8em;
+	background-color: rgba(245, 0, 0, 0.9);
+	padding: 5px;
+	padding-left: 20px;
+}
+td h1
+{
+	position: relative;
+	z-index: 9999;
+	font-size: 2.4em;
+	margin: 5px;
+	text-transform: uppercase;	
+}
+td h2 
+{
+	position: relative;
+	z-index: 9998;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin: 5px;
+}
+/*навігація кнопками*/
+#navig-btn
+{
+   font-size: 1.7em;
+   text-transform: uppercase;
+   text-align: center;
+   cursor: pointer;
+}
+#navig-btn li
+{
+	display: inline;
+	padding: 15px;	
+    margin-bottom: 20px;
+}
+#navig-btn img
+{
+	margin-bottom: -9px;
+	margin-right: 8px;
+	margin-left: 10px;
+}
+/*пагінація*/
+#navig-circle
+{
+	float:right;
+	margin-right: 20px;
+}
+#navig-circle span
+{
+	background-color: grey;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    float: left;
+}
+#navig-circle span.lighted
+{
+	box-shadow: 0 0 5px 3px  snow;
+	background-color: snow;
+}
